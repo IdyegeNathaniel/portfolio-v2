@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@layer theme, base, components, utilities;
+
+
+@utility flex-nav{
+  @apply flex justify-around items-center px-4 py-2;
+}
+
+
