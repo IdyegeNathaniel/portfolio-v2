@@ -1,8 +1,8 @@
 
 const Skills: React.FC = () => {
     return (
-        <section className="max-w-2xl mx-auto border-b py-12">
-            <h1 className="text-xl font-bold mb-4">Skills.</h1>
+        <section>
+            <h1>Skills.</h1>
             <div className="flex flex-wrap gap-2 pt-6">
                 {
                     skillset.map((skill, index) => (
