@@ -38,7 +38,7 @@ export const projects: ProjectType[] = [
         title: "FitForecast",
         text: "Get Outfit Suggestions Alongside weather Forecast of the day.",
         link: "https://hope-foundation-two.vercel.app/",
-        stack: ["React.JS", "TypeScript", "Tailwind.CSS", "Framer Motion"] 
+        stack: ["React.JS", "TypeScript", "Tailwind.CSS"] 
     },
 
 ]

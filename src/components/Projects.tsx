@@ -13,10 +13,10 @@ const Projects: React.FC = () => {
                 {
                     projects.map((project) => (
                         <div className="bg-black/50 flex flex-col gap-y-2 rounded-md shadow-md" key={project.title}>
-                            <Image src={project?.image} className="w-full h-50" width={0} height={0} alt="Project-image" loading="lazy"/>
+                            <Image src={project?.image} className="w-full h-50" width={300} height={500} alt="Project-image" loading="lazy"/>
                             <div className="p-2">
-                                <h2 className="flex items-center gap-2 text-base md:text-[12px] text-white"><FolderIcon className="w-[15px] h-[15px] mb-2" fill="white" />{project.title}</h2>
-                                <p className="text-sm md:text-[10px]">{project.text}</p>
+                                <h2 className="flex items-center gap-2 text-base md:text-[18px] text-white"><FolderIcon className="w-[15px] h-[15px] mb-2 flex items-center justify-center" fill="white" />{project.title}</h2>
+                                <p className="text-sm md:text-[14px]">{project.text}</p>
                                 <span className="flex flex-wrap gap-2 pt-2 my-3">
                                     {
                                         project.stack.map((item, index) => (
@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
                                         ))
                                     }
                                 </span>
-                                <button className="bg-zinc-800 px-3 py-2 mb-2 rounded-md" onClick={() => window.open(project.link, '_blank')} >Preview</button>
+                                <button className="bg-zinc-800 px-3 py-2 mb-2 rounded-md cursor-pointer hover:bg-zinc-900" onClick={() => window.open(project.link, '_blank')} >Preview</button>
                             </div>
                         </div>
                     ))
