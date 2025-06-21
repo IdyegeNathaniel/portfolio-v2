@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
             Me
           </span>
         </Link>
-        <Link href={"/"} className="group relative inline-block">
+        <Link href={"https://github.com/IdyegeNathaniel"} className="group relative inline-block">
           <GitIcon className="w-[20px] h-[20px] md:w-[28px] md:h-[28px]" />
           <span className="absolute top-full left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300  bg-white text-zinc-900 text-[12px] px-2 py-1 mt-4 rounded-md">
             GitHub
