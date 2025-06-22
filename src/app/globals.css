@@ -9,9 +9,15 @@
 
 @layer base{
   h1{
-    @apply text-xl font-bold mb-4;
+    @apply text-xl font-bold mb-5;
   }
   section{
     @apply max-w-2xl mx-auto border-b border-b-neutral-500 py-12
+  }
+  input{
+    @apply w-full text-base text-neutral-300 border border-gray-400 rounded-md px-3 py-4 mb-3 outline-none
+  }
+  textarea{
+    @apply w-full min-h-[140px] text-base text-neutral-300 border border-gray-400 rounded-md px-3 py-4 mb-5 outline-none
   }
 }
