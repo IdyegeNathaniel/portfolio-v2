@@ -15,9 +15,9 @@
     @apply max-w-2xl mx-auto border-b border-b-neutral-500 py-12
   }
   input{
-    @apply w-full text-base text-neutral-300 border border-gray-400 rounded-md px-3 py-4 mb-3 outline-none
+    @apply bg-neutral-800 w-full text-base text-neutral-300 border-none outline-gray-400 rounded-md px-3 py-4 mb-3
   }
   textarea{
-    @apply w-full min-h-[140px] text-base text-neutral-300 border border-gray-400 rounded-md px-3 py-4 mb-5 outline-none
+    @apply bg-neutral-800 w-full min-h-[140px] text-base text-neutral-300 border-none outline-gray-400 rounded-md px-3 py-4 mb-5 
   }
 }

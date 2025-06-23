@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-neutral-300">
                 {
                     projects.map((project) => (
-                        <div className="bg-black/50 flex flex-col gap-y-2 rounded-md shadow-md" key={project.title}>
+                        <div className="bg-neutral-800 flex flex-col gap-y-2 rounded-md shadow-md" key={project.title}>
                             <Image src={project?.image} className="w-full h-50" width={300} height={500} alt="Project-image" loading="lazy"/>
                             <div className="p-2">
                                 <h2 className="flex items-center gap-2 text-base md:text-[18px] text-white"><FolderIcon className="w-[15px] h-[15px] mb-2 flex items-center justify-center" fill="white" />{project.title}</h2>
@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
                                         ))
                                     }
                                 </span>
-                                <button className="bg-zinc-800 px-3 py-2 mb-2 rounded-md cursor-pointer hover:bg-zinc-900" onClick={() => window.open(project.link, '_blank')} >Preview</button>
+                                <button className="bg-gray-200 text-black px-3 py-2 mb-2 rounded-md cursor-pointer hover:bg-gray-300" onClick={() => window.open(project.link, '_blank')} >Preview</button>
                             </div>
                         </div>
                     ))
