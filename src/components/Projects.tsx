@@ -7,7 +7,7 @@ import { projects } from "@/assets/assets"
 
 const Projects: React.FC = () => {
     return (
-        <section>
+        <section id="projects">
             <h1>Projects.</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-neutral-300">
                 {
