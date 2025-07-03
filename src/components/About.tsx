@@ -13,7 +13,6 @@ const About: React.FC = () => {
           listing platforms to fully functional REST APIs — constantly
           challenging myself to learn more, build better, and ship faster.{" "}
           <br />
-          <br />
           I&#39;m deeply comfortable working independently, but I also value
           collaboration and clean version control through Git and GitHub. My
           approach to development is simple: write clean code, pay attention to
