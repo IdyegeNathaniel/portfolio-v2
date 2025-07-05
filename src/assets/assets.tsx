@@ -1,6 +1,7 @@
 import Barberplace from "@/assets/Images/BARBER.png"
 import Hope from "@/assets/Images/Hope-Foundation.png"
 import Coin from "@/assets/Images/coin-master.png"
+import Forecast from "@/assets/Images/fitforecast.png"
 
 
 interface ProjectType {
@@ -34,11 +35,11 @@ export const projects: ProjectType[] = [
         stack: ["React.JS", "TypeScript", "Tailwind.CSS", "Framer Motion", "FlutterWave"] 
     },
     {
-        image: "",
+        image: Forecast.src,
         title: "FitForecast",
         text: "Get Outfit Suggestions Alongside weather Forecast of the day.",
         link: "https://hope-foundation-two.vercel.app/",
-        stack: ["React.JS", "TypeScript", "Tailwind.CSS"] 
+        stack: ["React.JS", "TypeScript", "Tailwind.CSS", "OpenWeather API"] 
     },
 
 ]
