@@ -13,9 +13,42 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Nathaniel Idyege",
-  description: "Frontend Developer Portfolio",
-};
+  title: "Nathaniel Idyege - Frontend Developer",
+  description: "Portfolio of a Frontend Developer specializing in React, Next.js, and modern web technologies. View my projects and get in touch.",
+  keywords: ['Frontend Developer', 'Software Engineer', 'React Developer', 'Next.js', 'Javascript', 'Portfolio', 'Web Developer', 'Nathaniel Idyege'],
+  authors: [{ name: 'Nathaniel Idyege', }],
+  creator: 'Nathaniel Idyege',
+  publisher: 'Nathaniel Idyege',
+
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://idyege-portfolio.vercel.app/',
+    title: 'Nathaneiel Idyege - Frontend Developer Portfolio',
+    description: 'Portfolio showcasing full-stack development projects and expertise in modern web technologies.',
+    siteName: 'Nathaniel Idyege Portfolio',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Nathaniel Idyege - Frontend Developer',
+      }
+    ],
+  },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+  }
+
 
 export default function RootLayout({
   children,
