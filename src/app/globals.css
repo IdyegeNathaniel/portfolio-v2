@@ -2,6 +2,10 @@
 @layer theme, base, components, utilities;
 
 
+*{
+  scroll-behavior: smooth;
+}
+
 @utility flex-nav{
   @apply flex justify-around items-center px-4 py-2;
 }

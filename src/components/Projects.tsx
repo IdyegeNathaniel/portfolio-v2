@@ -15,8 +15,8 @@ const Projects: React.FC = () => {
                         <div className="bg-neutral-800 flex flex-col gap-y-2 rounded-md shadow-md" key={project.title}>
                             <Image src={project?.image} className="w-full h-50" width={300} height={500} alt="Project-image" loading="lazy"/>
                             <div className="p-2">
-                                <h2 className="flex items-center gap-2 text-base md:text-[18px] text-white"><FolderIcon className="w-[15px] h-[15px] mb-2 flex items-center justify-center" fill="white" />{project.title}</h2>
-                                <p className="text-sm md:text-[14px]">{project.text}</p>
+                                <h2 className="flex items-center gap-2 text-base md:text-[18px] text-white mb-2"><FolderIcon className="w-[15px] h-[15px]" fill="white" />{project.title}</h2>
+                                <p className="text-sm md:text-[14px] text-gray-500">{project.text}</p>
                                 <span className="flex flex-wrap gap-2 pt-2 my-3">
                                     {
                                         project.stack.map((item, index) => (
