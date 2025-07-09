@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://idyege-portfolio.vercel.app/',
     title: 'Nathaneiel Idyege - Frontend Developer Portfolio',
-    description: 'Portfolio showcasing full-stack development projects and expertise in modern web technologies.',
+    description: 'Frontend Developer with experience in building fast, responsive, accessible web applications.', 
     siteName: 'Nathaniel Idyege Portfolio',
     images: [
       {
