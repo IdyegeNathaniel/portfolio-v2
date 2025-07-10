@@ -9,7 +9,9 @@
 @utility flex-nav{
   @apply flex justify-around items-center px-4 py-2;
 }
-
+@utility det-span{
+  @apply flex items-center flex-1 min-w-max text-sm border border-gray-500 p-2 rounded-md;
+}
 
 @layer base{
   h1{
@@ -19,9 +21,9 @@
     @apply max-w-2xl mx-auto border-b border-b-neutral-500 py-12
   }
   input{
-    @apply bg-neutral-800 w-full text-base text-neutral-300 border-none outline-gray-400 rounded-md px-3 py-4 mb-3
+    @apply bg-neutral-800 w-full text-base text-neutral-300 border-none outline-gray-500 rounded-md px-3 py-4 mb-3
   }
   textarea{
-    @apply bg-neutral-800 w-full min-h-[140px] text-base text-neutral-300 border-none outline-gray-400 rounded-md px-3 py-4 mb-5 
+    @apply bg-neutral-800 w-full min-h-[140px] text-base text-neutral-300 border-none outline-gray-500 rounded-md px-3 py-4 mb-5 
   }
 }
