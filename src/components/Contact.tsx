@@ -15,8 +15,8 @@ const Contact: React.FC = () => {
         </div>
         <form method="POST" action="https://getform.io/f/arolrwkb">
           <div className="flex flex-col md:flex-row md:gap-3">
-            <input type="text" name="name" placeholder="Full Name" />
-            <input type="email" placeholder="Email Address" name="email" />
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" name="email" required />
           </div>
           <textarea name="message" placeholder="Write Your Message" />
           <button type="submit" className="w-full bg-white text-black py-3 rounded-md cursor-pointer" disabled>Send Message</button>

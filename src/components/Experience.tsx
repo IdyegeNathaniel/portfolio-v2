@@ -1,12 +1,25 @@
-import React from 'react'
+"use client";
+
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
     <section>
       <h1>Experience.</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-neutral-300">
-        <div className="">March - June 2025</div>
-        <div className="flex flex-col gap-6">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
+        >
+          March - June 2025
+        </motion.div>
+
+        <motion.div 
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5 }}
+        className="flex flex-col gap-6">
           <p className="text-white">
             Mlooop -{" "}
             <span className="text-[12px] text-gray-400">
@@ -17,15 +30,14 @@ const Experience = () => {
           <p className="">
             Developed and optimized components for a production-scale
             application, achieving a 30% reduction in load times. Implemented
-            pixel-perfect, responsive UIs from Figma designs with Tailwind CSS,
-            boosting mobile usability by 20%. Collaborated with cross-functional
-            teams via Git and agile tools to consistently deliver features ahead
-            of sprint deadlines.
+            pixel-perfect, responsive UIs from Figma designs. Collaborated with cross-functional teams via Git
+            and agile tools to consistently deliver features ahead of sprint
+            deadlines.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
-}
+};
 
-export default Experience
+export default Experience;
