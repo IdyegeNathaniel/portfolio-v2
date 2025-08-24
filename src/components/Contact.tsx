@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
             <input type="email" placeholder="Email Address" name="email" required />
           </div>
           <textarea name="message" placeholder="Write Your Message" />
-          <button type="submit" className="w-full bg-white text-black py-3 rounded-md cursor-pointer" disabled>Send Message</button>
+          <button type="submit" className="w-full bg-white text-black py-3 rounded-md cursor-pointer">Send Message</button>
         </form>
         </div>
      
