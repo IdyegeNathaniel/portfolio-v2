@@ -6,7 +6,7 @@ const Experience = () => {
   return (
     <section>
       <h1>Experience.</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-neutral-300">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-neutral-300 overflow-x-hidden">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}

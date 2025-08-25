@@ -4,7 +4,6 @@
 
 *{
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 @utility flex-nav{
