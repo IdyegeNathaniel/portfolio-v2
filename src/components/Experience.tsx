@@ -10,7 +10,7 @@ const Experience = () => {
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1}}
         >
           March - June 2025
         </motion.div>
@@ -18,7 +18,7 @@ const Experience = () => {
         <motion.div 
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1}}
         className="flex flex-col gap-6">
           <p className="text-white">
             Mlooop -{" "}
