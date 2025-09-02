@@ -10,7 +10,7 @@ import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    <div className="dark:bg-gradient-to-tr from-neutral-950 to-neutral-700 dark:text-white p-10 ">
+    <div className="bg-gradient-to-tr from-neutral-950 to-neutral-700 text-white p-10 ">
       <Navbar />
       <Hero />
       <About />
