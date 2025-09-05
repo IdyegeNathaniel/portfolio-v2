@@ -38,7 +38,7 @@ export const projects: ProjectType[] = [
         image: Forecast.src,
         title: "FitForecast",
         text: "Get Outfit Suggestions Alongside weather Forecast of the day.",
-        link: "https://hope-foundation-two.vercel.app/",
+        link: "https://fitforecast-ff.vercel.app/",
         stack: ["React.JS", "TypeScript", "Tailwind.CSS", "OpenWeather API"] 
     },
 
