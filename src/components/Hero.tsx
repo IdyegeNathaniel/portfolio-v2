@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
         href="mailto:idyegenathaniel@gmail.com?subject=Let's Connect"
         className="inline-flex items-center gap-2 group bg-white text-black text-[14px] font-normal px-3 py-2 md:px-6 md:py-3 rounded-md mt-5 cursor-pointer transition-all duration-500 no-underline"
       >
-        Let's Connect
+        Let&#39;s Connect
         <span className="group-hover:rotate-90 transition-transform duration-300">
           <HiArrowRight />
         </span>

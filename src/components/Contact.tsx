@@ -1,4 +1,4 @@
-import { MailIcon, PhoneIcon } from "./svgs";
+// import { MailIcon, PhoneIcon } from "./svgs";
 // import { motion } from "framer-motion"
 
 
