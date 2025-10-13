@@ -4,20 +4,21 @@ const About: React.FC = () => {
       <div>
         <h1>About Me.</h1>
         <p className="text-neutral-300 text-sm leading-8">
-          I&#39;m a self-taught frontend developer passionate about building
-          sleek, responsive, and user-friendly web interfaces. What started as
-          curiosity quickly evolved into a dedication to crafting intuitive
-          digital experiences with modern technologies, including React,
-          TypeScript, Tailwind CSS, and JavaScript.
-          <br /><br />
-          Along the way, I&#39;ve built real-world projects that solve real
-          problems, always pushing myself to learn more, build better, and
-          deliver faster.I&#39;m a proactive developer who values clear
-          communication, collaboration, and clean version control through Git
-          and GitHub. My approach is simple: write clean, maintainable code, pay
-          attention to the details, and always keep improving.I&#39;m excited to
-          join a team where I can contribute, learn from others, and build
-          products that users genuinely love.
+          Hey! I&#39;m Nathaniel, a self-taught frontend developer with a
+          genuine passion for turning ideas into clean, responsive, and
+          user-friendly web experiences. What started as curiosity about how
+          things work grew into a drive to build sleek, intuitive products using
+          modern tools like React, TypeScript, Tailwind CSS, and JavaScript.
+          <br />
+          <br />
+          I love bringing concepts to life, whether it&#39;s a full web app,
+          an interactive interface, or an API integration that powers a smarter
+          workflow. I&#39;ve worked on projects that solve real problems and help
+          people, and I&#39;m always exploring new technologies to level up my
+          skills. My approach is simple: write clean, maintainable code,
+          collaborate openly, and keep improving. I&#39;m driven by the challenge of
+          building things that are both creative and meaningful, the kind of
+          work that makes a real impact.
         </p>
       </div>
     </section>

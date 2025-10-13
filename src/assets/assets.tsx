@@ -14,11 +14,25 @@ interface ProjectType {
 
 export const projects: ProjectType[] = [
     {
+        image: Forecast.src,
+        title: "FitForecast",
+        text: "Get Outfit Suggestions Alongside weather Forecast of the day.",
+        link: "https://fitforecast-ff.vercel.app/",
+        stack: ["React.JS", "TypeScript", "Tailwind.CSS", "OpenWeather API"]
+    },
+    {
         image: Coin.src,
         title: "CoinMaster",
-        text: "A Real-time Cryptocurrency Price Tracker.",
+        text: "A minimalistic Real-time Cryptocurrency Price Tracking web application.",
         link: "https://coin-master-cm.vercel.app/",
         stack: ["React.JS", "Tailwind.CSS", "CoinGecko API"]
+    },
+    {
+        image: Hope.src,
+        title: "Hope Foundation",
+        text: "A Charitable organization's landing page with integrated payment gateway.",
+        link: "https://hope-foundation-two.vercel.app/",
+        stack: ["React.JS", "TypeScript", "Tailwind.CSS", "Framer Motion", "FlutterWave"] 
     },
     {
         image: Barberplace.src,
@@ -26,20 +40,6 @@ export const projects: ProjectType[] = [
         text: "A Male Saloon with Appointment Booking Function.",
         link: "https://barber-place.vercel.app/",
         stack: ["React.JS", "TypeScript", "Tailwind.CSS"] 
-    },
-    {
-        image: Hope.src,
-        title: "Hope Foundation",
-        text: "Charity Foundation Landing Page With a Payment Gateway.",
-        link: "https://hope-foundation-two.vercel.app/",
-        stack: ["React.JS", "TypeScript", "Tailwind.CSS", "Framer Motion", "FlutterWave"] 
-    },
-    {
-        image: Forecast.src,
-        title: "FitForecast",
-        text: "Get Outfit Suggestions Alongside weather Forecast of the day.",
-        link: "https://fitforecast-ff.vercel.app/",
-        stack: ["React.JS", "TypeScript", "Tailwind.CSS", "OpenWeather API"] 
     },
 
 ]

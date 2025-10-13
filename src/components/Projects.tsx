@@ -1,11 +1,11 @@
 "use client"
 
-
 import Image from "next/image"
 import { FolderIcon } from "./svgs"
 import { projects } from "@/assets/assets"
 
 const Projects: React.FC = () => {
+
     return (
         <section id="projects">
             <h1>Projects.</h1>
