@@ -9,7 +9,7 @@ const Skills: React.FC = () => {
 
     return (
         <section>
-            <h1>Skills & Expertise.</h1>
+            <h2 className="text-xl font-bold mb-5">Skills & Expertise.</h2>
             <div>
                 <div className="flex gap-5">
                     <button className={`text-neutral-500 text-[12px] cursor-pointer pt-2 pb-1 transition-all duration-300 ${showFilter === "skills" ? "border-b border-gray-200 text-white" : "border-none"}`} onClick={() => setShowFilter("skills")}>Technical Skill</button>

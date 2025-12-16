@@ -3,12 +3,12 @@ import { HiArrowRight } from "react-icons/hi";
 
 const Hero: React.FC = () => {
   return (
-    <section>
+    <section aria-labelledby="hero-heading">
       <div className="">
-        <h2 className="text-3xl font-bold mb-4 uppercase">Nathaniel Idyege</h2>
-        <h3 className="text-xl font-semibold font-outfit mb-2">
+        <h1 className="text-3xl font-bold mb-4 uppercase">Nathaniel Idyege</h1>
+        <h2 className="text-xl font-semibold font-outfit mb-2">
           Frontend Developer
-        </h3>
+        </h2>
         <p className="text-neutral-300 text-sm leading-relaxed">
           Hey there, let us create your ideas, dreams, and visual design into
           something practical.
@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
         className="inline-flex items-center gap-2 group bg-white text-black text-[14px] font-normal px-3 py-2 md:px-6 md:py-3 rounded-md mt-5 cursor-pointer transition-all duration-500 no-underline"
       >
         Let&#39;s Connect
-        <span className="group-hover:rotate-90 transition-transform duration-300">
+        <span className="group-hover:rotate-360 transition-transform duration-500">
           <HiArrowRight />
         </span>
       </Link>

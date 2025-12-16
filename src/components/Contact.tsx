@@ -1,13 +1,8 @@
-// import { MailIcon, PhoneIcon } from "./svgs";
-// import { motion } from "framer-motion"
-
-
 const Contact: React.FC = () => {
-
    
   return (
     <section id="contact">
-      <h1>Get in Touch.</h1>
+      <h2 className="text-xl font-bold mb-5">Get in Touch.</h2>
       <div>
         <form method="POST" action="https://getform.io/f/arolrwkb">
           <div className="flex flex-col md:flex-row md:gap-3">

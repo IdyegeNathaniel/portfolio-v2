@@ -1,8 +1,8 @@
 const About: React.FC = () => {
   return (
-    <section>
+    <section aria-labelledby="abouts-heading">
       <div>
-        <h1>About Me.</h1>
+        <h2 className="text-xl font-bold mb-5">About Me.</h2>
         <p className="text-neutral-300 text-sm leading-8">
           Hey! I&#39;m Nathaniel, a self-taught frontend developer with a
           genuine passion for turning ideas into clean, responsive, and

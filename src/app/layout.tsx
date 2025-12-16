@@ -13,6 +13,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://idyege-portfolio.vercel.app"),
+
   title: "Nathaniel Idyege - Frontend Developer",
   description: "Portfolio of a Frontend Developer specializing in React, Next.js, and modern web technologies. View my projects and get in touch.",
   keywords: ['Frontend Developer', 'Software Engineer', 'React Developer', 'Next.js', 'Javascript', 'Portfolio', 'Web Developer', 'Nathaniel Idyege'],
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://idyege-portfolio.vercel.app/',
-    title: 'Nathaneiel Idyege - Frontend Developer Portfolio',
+    title: 'Nathaniel Idyege - Frontend Developer Portfolio',
     description: 'Frontend Developer with experience in building fast, responsive, accessible web applications.', 
     siteName: 'Nathaniel Idyege Portfolio',
     images: [
@@ -58,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfit.className} ${inter.className} antialiased`}
+        className={`${inter.className} antialiased`}
       >
         {children}
       </body>
