@@ -48,7 +48,7 @@ const Skills: React.FC = () => {
 export default Skills
 
 export const skillset = [
-    "HTML", "CSS", "javaScript", "TypeScript", "React.js", "Next.js", "Node", "Express.js", "Tailwind.css", "Vercel", "Git", "GitHub"
+    "HTML", "CSS", "javaScript", "TypeScript", "React.js", "Next.js", "Material UI", "Node", "Express.js", "Tailwind.css", "Vercel", "Git", "GitHub"
 ] 
 
 export const serviceset = [

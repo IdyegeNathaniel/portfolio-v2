@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import { FolderIcon } from "./svgs";
 import { projects } from "@/assets/assets";
-import Link from "next/link"
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Projects: React.FC = () => {
   return (
@@ -9,13 +12,16 @@ const Projects: React.FC = () => {
       <h2 className="text-xl font-bold mb-5">Projects.</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-neutral-300">
         {projects.map((project) => (
-          <article
+          <motion.article
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1}}
             className="bg-neutral-800 flex flex-col gap-y-2 rounded-md shadow-md"
             key={project.title}
           >
             <Image
               src={project?.image}
-              className="w-full h-50"
+              className="w-full h-50 cursor-pointer hover:scale-105 duration-300"
               width={300}
               height={500}
               alt={`${project.title}-frontend project`}
@@ -49,7 +55,7 @@ const Projects: React.FC = () => {
                 Preview
               </Link>
             </div>
-          </article>
+          </motion.article>
         ))}
       </div>
     </section>
