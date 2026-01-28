@@ -13,10 +13,11 @@ const Projects: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-neutral-300">
         {projects.map((project) => (
           <motion.article
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1}}
-            className="bg-neutral-800 flex flex-col gap-y-2 rounded-md shadow-md"
+            initial={{ opacity: 0, y: 100, filter: "blur(10px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            viewport={{once: true, amount: 0.3}}
+            transition={{ duration: 0.8}}
+            className="bg-neutral-800 flex flex-col gap-y-2 rounded-md shadow-md z-0"
             key={project.title}
           >
             <Image

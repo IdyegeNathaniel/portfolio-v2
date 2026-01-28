@@ -17,8 +17,8 @@ export const projects: ProjectType[] = [
     {
         image: Vestir.src,
         title: "Vestir",
-        text: "Get Outfit Suggestions Alongside weather Forecast of the day.",
-        link: "https://fitforecast-ff.vercel.app/",
+        text: "Dressing the modern shopper with style and convenience.",
+        link: "https://vestir-sage.vercel.app/",
         stack: ["Next.JS", "TypeScript", "Material UI", "Zustand", "Framer Motion"]
     },
     {
