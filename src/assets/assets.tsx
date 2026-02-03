@@ -15,7 +15,7 @@ interface ProjectType {
 export const projects: ProjectType[] = [
     {
         image: Vestir.src,
-        title: "Vestir",
+        title: "Vestir(E-commerce)",
         text: "Dressing the modern shopper with style and convenience.",
         link: "https://vestir-sage.vercel.app/",
         stack: ["Next.JS", "TypeScript", "Material UI", "Zustand", "Framer Motion"]
