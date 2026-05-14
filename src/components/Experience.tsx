@@ -1,40 +1,50 @@
 "use client";
 
+import { experiences } from "@/assets/assets";
 import { motion } from "framer-motion";
+import { BiBriefcase } from "react-icons/bi";
 
 const Experience = () => {
   return (
     <section>
-      <h2 className="text-xl font-bold mb-5">Experience.</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-neutral-300 overflow-x-hidden">
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1}}
-        >
-          March - June 2025
-        </motion.div>
+      <h2 className="text-xl font-bold mb-10">Experience.</h2>
 
-        <motion.div 
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1}}
-        className="flex flex-col gap-6">
-          <p className="text-white">
-            Mlooop -{" "}
-            <span className="text-[12px] text-gray-400">
-              {" "}
-              Frontend Developer (Contract)
-            </span>
-          </p>
-          <p className="">
-            Developed and optimized components for a production-scale
-            application, achieving a 30% reduction in load times. Implemented
-            pixel-perfect, responsive UIs from Figma designs. Collaborated with cross-functional teams via Git
-            and agile tools to consistently deliver features ahead of sprint
-            deadlines.
-          </p>
-        </motion.div>
+      <div className="relative border-l border-gray-700 ml-3 flex flex-col gap-10">
+        {experiences.map((experience, index) => (
+          <div key={experience.id} className="relative pl-5 md:pl-8">
+            
+            <BiBriefcase className="absolute -left-[9px] top-2 w-4 h-4" />
+
+            {/* Date */}
+            <motion.p
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="text-sm text-gray-400 mb-3"
+            >
+              { index === 0 ? (<span className="text-green-400">Current</span>) : experience.date}
+            </motion.p>
+
+            {/* Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="bg-neutral-900 p-3 md:p-5 rounded-xl shadow-md group"
+            >
+              <p className="text-white font-medium group-hover:font-700">
+                {experience.company}{" "}
+                <span className="text-xs text-gray-400 ml-1">
+                  • {experience.role}({experience.type})
+                </span>
+              </p>
+
+              <p className="text-gray-300 mt-2 text-sm leading-relaxed group-hover:text-blue-200 transition-colors duration-300 text-">
+                {experience.description}
+              </p>
+            </motion.div>
+          </div>
+        ))}
       </div>
     </section>
   );

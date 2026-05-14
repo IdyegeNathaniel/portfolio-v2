@@ -1,23 +1,24 @@
 "use client";
 
 import Image from "next/image";
-import { FolderIcon } from "./svgs";
+import { FolderIcon, LinkIcon } from "./svgs";
 import { projects } from "@/assets/assets";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 const Projects: React.FC = () => {
+
   return (
     <section id="projects" aria-labelledby="projects-heading">
-      <h2 className="text-xl font-bold mb-5">Projects.</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-neutral-300">
-        {projects.map((project) => (
+      <h2 className="text-xl font-bold mb-5">Featured Projects.</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-neutral-300 ">
+        {projects.slice(0, 4).map((project) => (
           <motion.article
             initial={{ opacity: 0, y: 100, filter: "blur(10px)" }}
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{once: true, amount: 0.3}}
             transition={{ duration: 0.8}}
-            className="bg-neutral-800 flex flex-col gap-y-2 rounded-md shadow-md z-0"
+            className="relative bg-neutral-800 flex flex-col gap-y-2 rounded-md shadow-md"
             key={project.title}
           >
             <Image
@@ -28,7 +29,7 @@ const Projects: React.FC = () => {
               alt={`${project.title}-frontend project`}
               loading="lazy"
             />
-            <div className="p-2">
+            <div className="p-2 h-[]">
               <h2 className="flex items-center gap-2 text-base md:text-[18px] text-white mb-2">
                 <FolderIcon className="w-[15px] h-[15px]" fill="white" />
                 {project.title}
@@ -51,13 +52,23 @@ const Projects: React.FC = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-gray-200 text-black px-3 py-2 mb-2 rounded-md hover:bg-gray-300"
+                className="inline-flex group text-white border border-gray-400 hover:border-transparent hover:text-black hover:bg-gray-200 text-[14px] font-bold px-3 py-2 md:px-6 md:py-3 rounded-md mt-5 cursor-pointer transition-all duration-500 no-underline items-center"
               >
                 Preview
+                <LinkIcon className="w-[15px] h-[15px] ml-2 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </div>
           </motion.article>
         ))}
+      </div>
+      <div className="w-full flex justify-center items-center my-5">
+        <Link
+          href="projects"
+          className="flex group text-white border-2 hover:text-black hover:bg-gray-200 text-[14px] font-bold px-3 py-2 md:px-6 md:py-3 rounded-md mt-5 cursor-pointer transition-colors duration-300 no-underline items-center"
+        >
+          View All Projects
+          <LinkIcon className="w-[15px] h-[15px] ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+        </Link>
       </div>
     </section>
   );

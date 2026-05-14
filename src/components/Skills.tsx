@@ -47,11 +47,11 @@ const Skills: React.FC = () => {
 
 export default Skills
 
-export const skillset = [
-    "HTML", "CSS", "javaScript", "TypeScript", "React.js", "Next.js", "Material UI", "Node", "Express.js", "Tailwind.css", "Vercel", "Git", "GitHub"
+const skillset = [
+    "HTML", "CSS", "javaScript", "TypeScript", "React.js", "Next.js", "Material UI", "Node", "Express.js", "Tailwind.css", "Framer Motion", "Vercel", "Git", "GitHub",
 ] 
 
-export const serviceset = [
+const serviceset = [
     { name: "Web Development", description: "Full-stack web applications" },
         { name: "Responsive Design", description: "Mobile-first, cross-device compatibility" },
         { name: "Search Engine Optimization", description: "Technical SEO and performance optimization" },
