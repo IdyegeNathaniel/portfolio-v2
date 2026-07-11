@@ -12,7 +12,6 @@ const Experience = () => {
       <div className="relative border-l border-gray-700 ml-3 flex flex-col gap-10">
         {experiences.map((experience, index) => (
           <div key={experience.id} className="relative pl-5 md:pl-8">
-            
             <BiBriefcase className="absolute -left-[9px] top-2 w-4 h-4" />
 
             {/* Date */}
@@ -22,7 +21,11 @@ const Experience = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="text-sm text-gray-400 mb-3"
             >
-              { index === 0 ? (<span className="text-green-400">Current</span>) : experience.date}
+              {index === 0 ? (
+                <span className="text-green-400">Current</span>
+              ) : (
+                experience.date
+              )}
             </motion.p>
 
             {/* Content */}

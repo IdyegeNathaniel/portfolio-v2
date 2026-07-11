@@ -3,6 +3,7 @@ import Coin from "@/assets/Images/coin-master.png";
 import Forecast from "@/assets/Images/fitforecast.png";
 import Vestir from "@/assets/Images/Vestir.png";
 import Chuks from "@/assets/Images/ChuksKitchen.png";
+import synergist from "@/assets/Images/synergist.png";
 
 interface ProjectType {
   image: string;
@@ -22,6 +23,13 @@ interface ExperienceType {
 }
 
 export const projects: ProjectType[] = [
+  {
+    image: synergist.src,
+    title: "Personal Brand Platform",
+    text: "Designed and developed a premium personal brand website for an entrepreneur, author, and public speaker. The platform showcases coaching services, books, testimonials, and provides seamless inquiry management.",
+    link: "https://immanuelzever.vercel.app/",
+    stack: ["Next.JS", "TypeScript", "Resend", "Framer Motion"],
+  },
   {
     image: Chuks.src,
     title: "ChuksKitchen(E-commerce)",
