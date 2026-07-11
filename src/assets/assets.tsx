@@ -25,7 +25,7 @@ interface ExperienceType {
 export const projects: ProjectType[] = [
   {
     image: synergist.src,
-    title: "Personal Brand Platform",
+    title: "Personal Brand Platform For a Public Speaker",
     text: "Designed and developed a premium personal brand website for an entrepreneur, author, and public speaker. The platform showcases coaching services, books, testimonials, and provides seamless inquiry management.",
     link: "https://immanuelzever.vercel.app/",
     stack: ["Next.JS", "TypeScript", "Resend", "Framer Motion"],

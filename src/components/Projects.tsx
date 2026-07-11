@@ -30,8 +30,8 @@ const Projects: React.FC = () => {
               loading="lazy"
             />
             <div className="p-2 h-[]">
-              <h2 className="flex items-center gap-2 text-base md:text-[12px] text-white mb-2">
-                <FolderIcon className="w-[15px] h-[15px]" fill="white" />
+              <h2 className="flex items-center gap-2 text-base md:text-[18px] text-white mb-2">
+                {/* <FolderIcon className="w-[15px] h-[15px]" fill="white" /> */}
                 {project.title}
               </h2>
               <p className="text-sm md:text-[14px] text-gray-500">
