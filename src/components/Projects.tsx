@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FolderIcon, LinkIcon } from "./svgs";
+import { LinkIcon } from "./svgs";
 import { projects } from "@/assets/assets";
 import { motion } from "framer-motion";
 import Link from "next/link";
