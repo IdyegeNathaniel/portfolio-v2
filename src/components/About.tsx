@@ -4,12 +4,12 @@ const About: React.FC = () => {
       <div>
         <h2 className="text-xl font-bold mb-5">About Me.</h2>
         <p className="text-neutral-300 text-sm leading-8">
-          <strong>Frontend developer</strong> focused on delivering fast, scalable, and high-impact web applications. I
-          build production-ready products with React, TypeScript, and modern web
-          technologies—combining clean architecture, performance, and
-          user-centric design to create experiences that don&#39;t just work, but
-          perform. From full-scale applications to complex integrations, I ship
-          solutions that solve real problems and deliver tangible value.
+          <strong>Frontend developer</strong> building
+          responsive, production-grade interfaces with React, Next.js, and
+          TypeScript. Translates high-fidelity designs into scalable frontend
+          architecture, layers interactive UI over live data and backend APIs,
+          and ships accessible, performant experiences across SaaS platforms —
+          from early-stage products to client-facing web applications.
         </p>
       </div>
     </section>

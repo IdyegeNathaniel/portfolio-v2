@@ -81,15 +81,15 @@ export const experiences: ExperienceType[] = [
     type: "Full-time",
     company: "Nexora",
     description:
-      "Engineered and refined production-grade frontend features for a confidential web application, focusing on performant, responsive, and accessible user interfaces. Translated high-fidelity designs into pixel-accurate components and integrated backend APIs to enable dynamic, data-driven workflows. Collaborated within an agile development environment to deliver features iteratively alongside cross-functional teams."  },
+      "Architected the platform's frontend, establishing service and state-management patterns adopted across the entire codebase. Designed data-visualization and interaction interfaces layered over real-time sentiment and trend analysis, for brand and creator users tracking their market presence. Engineered a resilient real-time data layer, combining WebSocket streaming with automatic fallback to keep the platform responsive under unstable network conditions."  },
   {
     id: 2,
-    date: "Febuary - April 2026",
+    date: "February - April 2026",
     role: "Frontend Developer",
     type: "Intern",
     company: "TrueMinds",
     description:
-      "Engineered a responsive restaurant eCommerce SaaS platform from detailed Figma designs during an individual development phase, delivering pixel-perfect UI implementation and scalable frontend architecture. Transitioned into a collaborative team environment where responsibilities included frontend feature development, reusable component implementation, and seamless backend API integration to support production-ready user workflows.",
+      "Individual phase: engineered a responsive restaurant eCommerce SaaS platform from detailed Figma designs, delivering pixel-perfect, production-ready interfaces end-to-end as the sole frontend developer.Team phase: joined a cross-functional team to build an LMS — contributed frontend features, reusable UI components, and backend API integration within an agile workflow..",
   },
   {
     id: 3,
@@ -98,6 +98,6 @@ export const experiences: ExperienceType[] = [
     type: "Contract",
     company: "Mlooop",
     description:
-      "Developed and optimized components for a production-scale application, achieving a 30% reduction in load times. Implemented pixel-perfect, responsive UIs from Figma designs. Collaborated with cross-functional teams via Git and agile tools to consistently deliver features ahead of sprint deadlines.",
+      "Built and shipped multiple Vue.js/Nuxt.js components in a production-grade web app, reducing page load times by 30% through performance optimization. Translated complex Figma designs into pixel-perfect, responsive UIs, improving mobile usability scores by over 20%.",
   },
 ];
